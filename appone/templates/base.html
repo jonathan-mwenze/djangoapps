@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+	{% if title %}
+	   <title>{{ title }}</title>
+	{% else %}
+	   <title>appone</title>
+	{% endif %}
+</head>
+<body>
+   <h1>Django For Beginners</h1>
+   <a href="{% url 'home' %}">HOME</a>|<a href="{% url 'about' %}">ABOUT</a>
+   {%block content %}{% endblock %}
+</body>
+</html>

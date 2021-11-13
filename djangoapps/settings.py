@@ -25,9 +25,9 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'os6i#h_#b7$wl*7b1c_gqgl!+5y*f*bn3-0nm^p2o@wlm)2*0q'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['appsfirst.herokuapp.com','127.0.0.1']
 
 
 # Application definition
@@ -122,4 +122,4 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 
-#django_heroku.settings(local())
+django_heroku.settings(local())
